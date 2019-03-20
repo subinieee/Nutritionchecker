@@ -20,7 +20,7 @@ def hellosubin():
 
 @app.route("/<name>")
 def hellostranger(name):
-    return render_template("hello.html", name=name.title())
+    return render_template("h.html", name=name.title())
 
 
 @app.route("/signup", methods=["POST"])
