@@ -52,7 +52,7 @@ td          {height:50px;
             border-style: bold;
             border-color: white;
             font-family: 'Alegreya SC';
-            font-size: 15px;
+            font-size: 100%;
             width:10%;}
 tBody       {background-color:white;}
 
