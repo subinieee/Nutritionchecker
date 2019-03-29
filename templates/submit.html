@@ -11,10 +11,7 @@
 
 <div class="topnav">
 
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="contact">Contact</a>
-  <a href="#about">About</a>
+  <a href="/">Home</a>
 
 </div>
 <title>My project</title>
@@ -26,7 +23,25 @@
 
 <div class="main">
   <p>Thank you</p>
+  <p style="color:blue;"><i> Matched Item: {{myItem}}</i></p>
+  <table>
+    <tbody>
+    <tr>
+        <td>Energy</td>
+        <td>Protein</td>
+        <td>Fat</td>
+        <td>Carbs</td>
+        <td>Fibre</td>
+    </tr>
+    <tr>
+        <td>{{myItemtwo['ENERC_KCAL']}} kcal</td>
+        <td>{{myItemtwo['PROCNT']}} g</td>
+        <td>{{myItemtwo['FAT']}} g</td>
+        <td>{{myItemtwo['CHOCDF']}} g</td>
+        <td>{{myItemtwo['FIBTG']}} g</td>
+    </tr>
 
+</tbody></table></p>
 
 <!-- <form method="post" action="Process">
 

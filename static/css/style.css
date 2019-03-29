@@ -1,5 +1,5 @@
 body        {background-image:url("../images/brooke-lark-158019.jpg");
-            background-attachment:fixed;
+            background-attachment:scroll;
             background-size:cover;
             background-position: center;
             background-repeat: repeat-y;}
@@ -13,6 +13,7 @@ body        {background-image:url("../images/brooke-lark-158019.jpg");
             border-spacing: 30px 30px;
             border-color:rgb(100, 200, 200);
             padding:30px 50px 20px 50px;}
+
 p           {font-family: 'Alegreya SC';
             font-size: 40px;
             color: black;
@@ -20,7 +21,7 @@ p           {font-family: 'Alegreya SC';
             font-weight: bold;
             word-wrap: break-word;
             width: 100%;}
-label       {font-size: 20px;}
+label       {font-size: 30px;}
 
 
 #logo       {display: block;
@@ -32,6 +33,7 @@ label       {font-size: 20px;}
             border-color: white;
             border-width:3px;
             }
+.result     {color:blue;}
 table       {border:3px solid black;
             margin-left:auto;
             margin-right:auto;
@@ -43,14 +45,15 @@ td          {height:50px;
             border-radius:3px;
             border:1px solid black;
             text-align:center;}
+
 #addButId, #submitbutton {margin:10px;
             padding: 10px;
             border-radius:10px;
             border-style: bold;
             border-color: white;
             font-family: 'Alegreya SC';
-            font-size: 15px;
-            width:20%;}
+            font-size: 25px;
+            width:10%;}
 tBody       {background-color:white;}
 
 .topnav {

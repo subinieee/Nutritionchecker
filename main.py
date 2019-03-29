@@ -12,17 +12,15 @@ from flask import jsonify
 #              "text": "Testing some Mailgun awesomness!"})
 
 def checkrecipe(recipe):
-    endpoint="https://api.nutritionix.com/v1_1/search"
-    payload={"appId":"01f8af2c","appKey":"f9a14c81dcd43efdb4465a478369a4dd", "query":["recipe"]}
+    endpoint="https://api.edamam.com/api/food-database/parser"
+    payload={"app_id":"1dbb4707","app_key":"e4c61d76694126307807831e256ba0cf", "ingr":recipe}
     response = requests.get(endpoint, params=payload)
     data=response.json()
     return data
 
 
 app=Flask("MyApp")
-@app.route("/<name>")
-def hello():
-    return "Hello World"
+
 @app.route("/contact")
 def hellosubin():
     return "Hello Subin"
@@ -37,8 +35,9 @@ def sign_up():
     # if request.method == 'POST':
     data = request.form
     recipe_results = checkrecipe(data["recipe"])
-    item = recipe_results["hits"][0]["fields"]["item_name"]
-    return jsonify(item)
+    item = recipe_results['hints'][0]['food']['label']
+    itemtwo = recipe_results['hints'][0]['food']['nutrients']
+    return render_template("submit.html", myItem= item, myItemtwo=(itemtwo))
 
     # return render_template("submit.html")
 #
