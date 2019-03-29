@@ -2,14 +2,6 @@ from flask import Flask, render_template,request
 import requests
 from flask import jsonify
 
-# def send_simple_message(userMail):
-#    return requests.post(
-#        "https://api.mailgun.net/v3/sandboxac414334ba8d4908849d76f3978027eb.mailgun.org/messages",
-#        auth=("api", "9c52518eb0b6272713668b35a0c6d244-acb0b40c-a947cfdd"),
-#        data={"from": "Excited User <mailgun@sandboxac414334ba8d4908849d76f3978027eb.mailgun.org>",
-#              "to": [userMail],
-#              "subject": "Hello",
-#              "text": "Testing some Mailgun awesomness!"})
 
 def checkrecipe(recipe):
     endpoint="https://api.edamam.com/api/food-database/parser"
