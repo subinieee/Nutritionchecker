@@ -1,8 +1,8 @@
 body        {background-image:url("../images/brooke-lark-158019.jpg");
-            background-attachment:scroll;
+            background-attachment: scroll;
             background-size:cover;
             background-position: center;
-            background-repeat: repeat-y;}
+            background-repeat: no-repeat;;}
 .main{      background-color: rgba(300,300,300,0.6);
             text-align: center;
             margin: 150px 150px;
@@ -37,7 +37,7 @@ label       {font-size: 30px;}
 table       {border:3px solid black;
             margin-left:auto;
             margin-right:auto;
-            width:800px;
+            width:100%;
             opacity:1;}
 td          {height:50px;
             font-family: 'Alegreya SC';
