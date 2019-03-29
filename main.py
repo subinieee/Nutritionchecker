@@ -21,9 +21,6 @@ def checkrecipe(recipe):
 
 app=Flask("MyApp")
 
-@app.route("/contact")
-def hellosubin():
-    return "Hello Subin"
 
 @app.route("/")
 def hellostranger():
