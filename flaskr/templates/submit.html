@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="main">
+  <p>Thank you</p>
+
+  <p style="color:blue;"><i> Matched Item: {{myItem}}</i></p>
+  <table>
+    <tbody>
+    <tr>
+        <td>Energy</td>
+        <td>Protein</td>
+        <td>Fat</td>
+        <td>Carbs</td>
+        <td>Fibre</td>
+    </tr>
+    <tr>
+        <td>{{myItemtwo['ENERC_KCAL']}} kcal</td>
+        <td>{{myItemtwo['PROCNT']}} g</td>
+        <td>{{myItemtwo['FAT']}} g</td>
+        <td>{{myItemtwo['CHOCDF']}} g</td>
+        <td>{{myItemtwo['FIBTG']}} g</td>
+    </tr>
+
+ </tbody></table></p>
+<a href="{{ url_for('submit.save_food') }}">Save</a> 
+ </form>
+<div id="edamam-badge" data-color="white"></div>
+
+
+{% endblock %}
+
